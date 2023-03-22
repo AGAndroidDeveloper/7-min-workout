@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My WorkOut Plan</string>
+    <string name="get_ready_for">GET READY FOR</string>
+    <string name="end">END</string>
+    <string name="congratulation">Congratulation</string>
+    <string name="you_have_completed_the_exercise">you have completed the exercise</string>
+    <string name="finish">FINISH</string>
+
+</resources>
