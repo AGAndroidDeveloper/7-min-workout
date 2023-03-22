@@ -1,9 +1,10 @@
 package com.example.myworkoutplan
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 
 import android.os.Bundle
-import android.text.Editable
+
 import com.example.myworkoutplan.databinding.ActivityBmiBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlin.math.ceil
@@ -15,10 +16,6 @@ class BmiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBmiBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-
-
-
-
         binding?.button2?.setOnClickListener {
             try {
                 if (binding?.inputHeight?.text?.isNotEmpty() == true){
@@ -32,25 +29,14 @@ class BmiActivity : AppCompatActivity() {
             }catch(e :Exception){
                 throw   e
             }
-
-
-
-//
-            //
-            //
-            //            }
-
         }
     }
+    @SuppressLint("SetTextI18n")
     private fun returnYourBmi() {
-        // here we get height in meter
       val   a = binding?.inputWeight?.text.toString().toDoubleOrNull()
         val make = binding?.inputHeight?.text
      val    b1  = make.toString().toDoubleOrNull()
-
         val height = b1?.times(b1)
-
-
         val bmiIndex = a?.div(height!!)
         binding?.textView3?.text = "Your Bmi is :${bmiIndex?.let { ceil(it).toString() }}"
     }
