@@ -11,12 +11,10 @@ import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.CursorAdapter
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myworkoutplan.databinding.ActivityExerciseBinding
 import com.example.myworkoutplan.databinding.CustomDialogBinding
-import java.lang.Math.floorDiv
+
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -25,8 +23,7 @@ class exercise_ : AppCompatActivity(),TextToSpeech.OnInitListener {
 
     private var myDialog :Dialog? = null
 
-    private var exerciseTimer: CountDownTimer? =
-        null
+    private var exerciseTimer: CountDownTimer? = null
     private var exerciseTimerDuration: Long = 5
 
     // The Variable for the exercise list and current position of exercise here it is -1 as the list starting element is 0
@@ -67,22 +64,11 @@ class exercise_ : AppCompatActivity(),TextToSpeech.OnInitListener {
 
     //Setting up the Get Ready View with 10 seconds of timer
     //START
-    /**
-     * Function is used to set the timer for REST.
-     */
+
     private fun setupRestView() {
 
         player?.stop()
-//        try {
-//            val soundURI =
-//                Uri.parse("android.resource://eu.tutorials.a7_minutesworkoutapp/" + R.raw.press_start)
-//            player = MediaPlayer.create(applicationContext, soundURI)
-//            player?.isLooping = false // Sets the player to be looping or non-looping.
-//            player?.start() // Starts Playback.
-//        } catch (e: Exception) {
-//            e.printStackTrace()
-//        }
-        // END
+//
         binding?.readyFrameLayout?.visibility = View.VISIBLE
         binding?.readyTimer?.visibility = View.VISIBLE
         binding?.textView2?.visibility = View.VISIBLE
@@ -90,10 +76,7 @@ class exercise_ : AppCompatActivity(),TextToSpeech.OnInitListener {
         binding?.frameLayout?.visibility = View.INVISIBLE
         binding?.exerciseName?.visibility = View.INVISIBLE
         binding?.image?.visibility = View.INVISIBLE
-        /**
-         * Here firstly we will check if the timer is running the and it is not null then cancel the running timer and start the new one.
-         * And set the progress to initial which is 0.
-         */
+
         if (restTimer != null) {
             restTimer?.cancel()
             // restProgress = 0
@@ -116,19 +99,10 @@ class exercise_ : AppCompatActivity(),TextToSpeech.OnInitListener {
     // END
     // Setting up the 10 seconds timer for rest view and updating it continuously.
     //START
-    /**
-     * Function is used to set the progress of timer using the progress
-     */
+
     private fun setRestProgressBar() {
 
-        //  binding?.progressBar?.progress = restProgress // Sets the current progress to the specified value.
-        /**
-         * @param millisInFuture The number of millis in the future from the call
-         *   to {#start()} until the countdown is done and {#onFinish()}
-         *   is called.
-         * @param countDownInterval The interval along the way to receive
-         *   {#onTick(long)} callbacks.
-         */
+
         // Here we have started a timer of 10 seconds so the 10000 is milliseconds is 10 seconds and the countdown interval is 1 second so it 1000.
         restTimer = object : CountDownTimer(10000, 1000) {
             override fun onTick(p0: Long) {
@@ -144,9 +118,7 @@ class exercise_ : AppCompatActivity(),TextToSpeech.OnInitListener {
                 // When the 10 seconds will complete this will be executed.
                 currentExercisePosition++
 
-                // TODO(Step 1 : When we are getting an updated position of exercise set that item in
-                //  the list as selected and notify the adapter class.)
-                // START
+
                 exerciseList!![currentExercisePosition].setIsSelected(true) // Current Item is selected
                 exerciseAdapter!!.notifyDataSetChanged() // Notified the current item to adapter class to reflect it into UI.
                 // END
@@ -159,9 +131,7 @@ class exercise_ : AppCompatActivity(),TextToSpeech.OnInitListener {
 
     // Setting up the Exercise View with a 30 seconds timer
     // START
-    /**
-     * Function is used to set the progress of the timer using the progress for Exercise View.
-     */
+
     private fun setupExerciseView() {
         binding?.frameLayout?.visibility = View.VISIBLE
         binding?.exerciseTimer?.visibility = View.VISIBLE
@@ -229,9 +199,7 @@ binding?.textView2?.visibility = View.INVISIBLE
 
     // Destroying the timer when closing the activity or app
     //START
-    /**
-     * Here in the Destroy function we will reset the rest timer if it is running.
-     */
+   
     public override fun onDestroy() {
         if (restTimer != null) {
             restTimer?.cancel()
