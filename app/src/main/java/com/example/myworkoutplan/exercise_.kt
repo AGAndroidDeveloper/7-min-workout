@@ -238,7 +238,7 @@ binding?.textView2?.visibility = View.INVISIBLE
         exerciseAdapter = ExerciseStatusAdapter(exerciseList!!)
         binding?.itemRecycle?.adapter = exerciseAdapter
     }
-   
+
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         showDialog()
