@@ -15,11 +15,17 @@ class MainActivity : AppCompatActivity() {
 
 
         binding?.start?.setOnClickListener {
-            val  intent = Intent(this,exercise_::class.java)
+            val  intent = Intent(this,Exercise::class.java)
             startActivity(intent)
         }
         binding?.bmi?.setOnClickListener {
-            val intent = Intent(this@MainActivity,BmiActivity::class.java)
+            val intent = Intent(this@MainActivity,Body_Mass_Index::class.java)
+            startActivity(intent)
+        }
+
+        binding?.history?.setOnClickListener{
+            val intent = Intent(this,exerciseHistory::class.java)
+
             startActivity(intent)
         }
 

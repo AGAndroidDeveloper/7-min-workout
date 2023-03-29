@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <LinearLayout
@@ -12,12 +12,12 @@
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical"
         android:padding="5dp"
-        android:background="#B46060">
+        android:background="#E4DCCF">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Are You Sure?"
+            android:text="@string/are_you_sure"
             android:textSize="25sp"
             android:textStyle="bold"
           android:layout_gravity="center"/>
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="if you go back now you will loose your current exercise"
+            android:text="@string/if_you_go_back_now_you_will_loose_your_current_exercise"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_gravity="center"
@@ -42,7 +42,7 @@
                 android:id="@+id/btn_No"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="No"
+                android:text="@string/no"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center"
-                android:text="Yes"
+                android:text="@string/yes"
 
                 android:textSize="20sp"
                 android:textStyle="bold" />

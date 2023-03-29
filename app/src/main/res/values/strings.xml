@@ -1,9 +1,43 @@
-<resources>
-    <string name="app_name">My WorkOut Plan</string>
-    <string name="get_ready_for">GET READY FOR</string>
-    <string name="end">END</string>
-    <string name="congratulation">Congratulation</string>
-    <string name="you_have_completed_the_exercise">you have completed the exercise</string>
-    <string name="finish">FINISH</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="get_ready_for" tools:ignore="MissingTranslation" translatable="false">GET READY FOR</string>
+    <string name="end" translatable="false">END</string>
+    <string name="congratulation" translatable="false">Congratulation</string>
+    <string name="you_have_completed_the_exercise" translatable="false">you have completed the exercise</string>
+    <string name="finish" translatable="false">FINISH</string>
+    <string name="enter_your_height" translatable="false">Enter Your Height</string>
+    <string name="height_in_meter" translatable="false">Height in meter</string>
+    <string name="enter_your_weight" translatable="false">Enter Your Weight</string>
+    <string name="weight_in_kg" translatable="false">Weight in kg</string>
+    <string name="calculate" translatable="false">calculate</string>
+    <string name="textview" translatable="false">TextView</string>
+    <string name="si_unit" translatable="false">SI UNIT</string>
+    <string name="us_unit" translatable="false">US UNIT</string>
+    <string name="message1" translatable="false">you are normal weight , you should not be worry about.</string>
+    <string name="hello1" translatable="false">you are underweight weight , you should  be worry about.</string>
+    <string name="message3" translatable="false">\"you are in a serious situation right now, you really need to loose some weight \"</string>
+    <string name="start" translatable="false">START</string>
+    <string name="bmi" translatable="false">BMI</string>
+    <string name="calculate_bmi" translatable="false">calculate BMI</string>
+    <string name="image" translatable="false">image</string>
+    <string name="id_1" translatable="false">ID:1</string>
+    <string name="if_you_go_back_now_you_will_loose_your_current_exercise" translatable="false">if you go back now you will loose your current exercise</string>
+    <string name="are_you_sure" translatable="false">Are You Sure?</string>
+    <string name="no" translatable="false">No</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="history" translatable="false">History</string>
+    <string name="History" translatable="false">History</string>
+    <string name="calculate_bmi1" translatable="false">Calculate BMI</string>
+    <string name="app_name" translatable="false">7 Min Workout App</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="name12" translatable="false">Name</string>
+    <string name="name2" translatable="false">Name</string>
+    <string name="button1" translatable="false">Button</string>
+    <string name="edittext" translatable="false">Edittext</string>
+    <string name="feet" translatable="false">feet</string>
+    <string name="inch" translatable="false">inch</string>
+    <string name="weight_in_pound" translatable="false">Weight in Pound</string>
+    <string name="image_" translatable="false">image</string>
+    <string name="upcoming_exercise" translatable="false">UPCOMING EXERCISE</string>
+    <string name="image_1" translatable="false">image</string>
 
 </resources>

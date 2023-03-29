@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".exercise_">
+    tools:context=".Exercise">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/textviewActionbar"
@@ -12,19 +12,17 @@
         android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         android:gravity="center"
         android:textSize="25sp"
         android:textStyle="bold"
         />
-
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:contentDescription="image"
+        android:contentDescription="@string/image_"
         android:scaleType="centerCrop"
-        tools:visibility="invisible"
+        tools:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textviewActionbar"
         tools:srcCompat="@drawable/download__17_" />
@@ -45,8 +43,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:progress="30"
-            android:max="30"
+            android:progress="100"
+            tools:max="30"
             android:rotation="-90"
             android:progressDrawable="@drawable/progress_bar_shape"
             />
@@ -119,8 +117,8 @@
             android:layout_gravity="center"
             android:progressDrawable="@drawable/progress_bar_shape"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:progress="10"
-            android:max="10"
+            tools:progress="10"
+           tools:max="10"
             android:rotation="-90"
             />
 
@@ -153,7 +151,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="UPCOMING EXERCISE"
+        android:text="@string/upcoming_exercise"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/ready_frame_layout"

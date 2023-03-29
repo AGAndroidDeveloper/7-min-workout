@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="190dp"
+
+        android:autofillHints="name"
+        android:contentDescription="@string/edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/name12"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="270dp"
+            android:autofillHints="name3221"
+            tools:ignore="LabelFor" />
+
+        <EditText
+
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/name2"
+            tools:layout_editor_absoluteX="255dp"
+            tools:layout_editor_absoluteY="270dp"
+            android:autofillHints="name123"
+            tools:ignore="LabelFor" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="296dp"
+        android:text="@string/button1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A red ripple masked against an opaque rectangle. -->
+
+
+<ripple android:color="#635985"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="#D5CEA3"/>
+            <corners android:radius="5dp"/>
+                <stroke
+                    android:width="5dp"
+                    android:color="#144272"/>
+
+        </shape>
+    </item>
+
+
+
+
+
+</ripple>
+
+
+
+
+
+
+
+
