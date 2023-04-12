@@ -66,10 +66,6 @@ class Body_Mass_Index : AppCompatActivity() {
                binding12?.inchEdittext?.text?.clear()
 
            }
-
-
-
-
         }
         healthMessage = binding12?.hMessage
 
@@ -117,18 +113,7 @@ class Body_Mass_Index : AppCompatActivity() {
         val height = b1.times(b1)
         val bmiIndex = ceil(a.div(height))
         binding12?.bmiResult?.text = "Your Bmi is :${bmiIndex}"
-
-
-
-
-
-
-
-
-
-
-
-return bmiIndex
+        return bmiIndex
     }
 
 
